@@ -1,0 +1,7 @@
+{
+  "name": "todolistorbis",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
