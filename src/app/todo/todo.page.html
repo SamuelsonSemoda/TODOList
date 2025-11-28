@@ -1,7 +1,7 @@
 <div class="ion-page">
   <ion-header>
-    <ion-toolbar>
-      <ion-title>Todo List</ion-title>
+    <ion-toolbar color="primary">
+      <ion-title size="large">Můj TODO List - DMA</ion-title>
     </ion-toolbar>
   </ion-header>
 
@@ -15,7 +15,7 @@
           name="newText"
         ></ion-input>
 
-        <ion-button type="submit">Přidat</ion-button>
+        <ion-button shape="round" color="primary" size="default" type="submit">Přidat</ion-button>
       </ion-item>
     </form>
 
@@ -23,13 +23,13 @@
 
       @for (t of todos; track t.id; let i = $index) {
         <ion-item>
-          <ion-checkbox slot="start" [(ngModel)]="t.done" name="done{{ i }}"></ion-checkbox>
+          <ion-checkbox color="dark" slot="start" [(ngModel)]="t.done" name="done{{ i }}"></ion-checkbox>
 
           <ion-label [class.done]="t.done">
             {{ t.text }}
           </ion-label>
 
-          <ion-button fill="clear" slot="end" (click)="remove(i)">
+          <ion-button color="dark" fill="clear" slot="end" (click)="remove(i)">
             ✖
           </ion-button>
         </ion-item>
@@ -43,7 +43,7 @@
 
     </ion-list>
 
-    <div style="margin-top: 20px;">
+    <div class="todo-list-bottom-ui">
       <small>Hotovo: {{ completedCount() }} / {{ todos.length }}</small>
       <ion-button size="small" fill="clear" (click)="clearCompleted()">Vymazat hotové</ion-button>
     </div>
