@@ -3,4 +3,4 @@
 
 **Jak spustit aplikaci?**
 *Naklonujte si tento repozitář*
-*Do konzole napište:* 'npm install'
+*Do konzole napište:* ```npm install```
