@@ -2,5 +2,5 @@
 ### Samuel Šemoda S3C
 
 **Jak spustit aplikaci?**
-*Naklonujte si tento repozitář*
-*Do konzole napište:* ```npm install```
+* *Naklonujte si tento repozitář*
+* *Do konzole napište:* ```npm install```
